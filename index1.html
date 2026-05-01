@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhan Hair Dresser | Men's Barber Shop London</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        barber: {
+                            dark: '#0A0F1F',
+                            gold: '#D4AF37',
+                            light: '#F8FAFC',
+                            gray: '#131A2A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+            .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #FCD157 100%); }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.2); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-barber-dark text-white font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-opacity-95 backdrop-blur-md bg-barber-dark border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer">
+                    <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center text-barber-dark font-black text-xl">
+                        <i class="fa fa-scissors"></i>
+                    </div>
+                    <div class="leading-tight">
+                        <span class="font-black text-2xl tracking-wider block">SUBHAN</span>
+                        <span class="text-xs text-gray-400 tracking-[0.2em]">HAIR DRESSER</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-wider">
+                    <a href="#home" class="hover:text-barber-gold transition-colors">Home</a>
+                    <a href="#services" class="hover:text-barber-gold transition-colors">Services</a>
+                    <a href="#gallery" class="hover:text-barber-gold transition-colors">Styles</a>
+                    <a href="#about" class="hover:text-barber-gold transition-colors">About</a>
+                    <a href="#contact" class="hover:text-barber-gold transition-colors">Contact</a>
+                    <a href="tel:+447000000000" class="bg-barber-gold text-barber-dark px-6 py-2 rounded-full font-bold hover:brightness-110 transition">
+                        <i class="fa fa-phone mr-2"></i> BOOK NOW
+                    </a>
+                </div>
+                <button class="md:hidden text-2xl"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+        <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-r from-barber-dark via-transparent to-barber-dark"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="max-w-2xl">
+                <h3 class="text-barber-gold font-semibold tracking-[0.2em] mb-4">EST. 2009 • LONDON</h3>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    EXPERT BARBERING <br>
+                    <span class="text-barber-gold">FOR THE MODERN GENT</span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    Welcome to Subhan Hair Dresser. Located in Green Street, East London, we bring precision cutting, classic shaves, and modern styling together. 
+                    Step inside for an experience you won't forget.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#services" class="bg-barber-gold text-barber-dark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition">
+                        VIEW SERVICES
+                    </a>
+                    <a href="#gallery" class="border border-barber-gold text-barber-gold px-8 py-4 rounded-full font-bold text-lg hover:bg-barber-gold hover:text-barber-dark transition">
+                        SEE STYLES
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Bar -->
+    <div class="bg-barber-gray py-6 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 md:gap-12 text-sm md:text-base">
+            <span class="flex items-center"><i class="fa fa-map-marker text-barber-gold mr-2"></i> Green Street, E7 8BZ London</span>
+            <span class="flex items-center"><i class="fa fa-clock-o text-barber-gold mr-2"></i> Open 7 Days a Week</span>
+            <span class="flex items-center"><i class="fa fa-star text-barber-gold mr-2"></i> 15+ Years Experience</span>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-3">OUR <span class="text-barber-gold">SERVICES</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">From classic scissor cuts to modern skin fades, we master every technique.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-barber-gray p-8 rounded-2xl border border-gray-800 card-hover">
+                <i class="fa fa-cut text-4xl text-barber-gold mb-6"></i>
+                <h3 class="text-2xl font-bold mb-3">Premium Haircut</h3>
+                <p class="text-gray-400 mb-4">Includes consultation, precision cut, wash and finish with style. Fades, Tapers, Undercuts.</p>
+                <span class="text-barber-gold font-bold text-xl">£15.00</span>
+            </div>
+            
+            <div class="bg-barber-gray p-8 rounded-2xl border border-gray-800 card-hover">
+                <i class="fa fa-user text-4xl text-barber-gold mb-6"></i>
+                <h3 class="text-2xl font-bold mb-3">Beard Trim & Shape</h3>
+                <p class="text-gray-400 mb-4">Expert beard grooming using clippers and straight razor. Clean lines and perfect shape.</p>
+                <span class="text-barber-gold font-bold text-xl">£10.00</span>
+            </div>
+
+            <div class="bg-barber-gray p-8 rounded-2xl border border-gray-800 card-hover">
+                <i class="fa fa-star text-4xl text-barber-gold mb-6"></i>
+                <h3 class="text-2xl font-bold mb-3">The VIP Treatment</h3>
+                <p class="text-gray-400 mb-4">Haircut + Beard + Hot Towel + Massage. The complete experience for true gents.</p>
+                <span class="text-barber-gold font-bold text-xl">£25.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Styles -->
+    <section id="gallery" class="py-20 px-4 bg-barber-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-3">STYLE <span class="text-barber-gold">GALLERY</span></h2>
+                <p class="text-gray-400">Check out our latest work and find your next look.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1599351431719-4de8b85ce2c1?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Fade Haircut">
+                <img src="https://images.unsplash.com/photo-1568053141193-340980338a8d?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Beard Style">
+                <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Modern Cut">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Classic Style">
+                <img src="https://images.unsplash.com/photo-1631947143217-3547b072776d?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Buzz Cut">
+                <img src="https://images.unsplash.com/photo-1597223557157-3f85b80d5948?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Undercut">
+                <img src="https://images.unsplash.com/photo-1564019034625-619948060ad2?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Line up">
+                <img src="https://images.unsplash.com/photo-1593104547439-76e328389448?w=400&q=80" class="rounded-xl w-full h-64 object-cover card-hover" alt="Pompadour">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Tanvir Bhai -->
+    <section id="about" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1594797649644-66868859d3e0?w=600&q=80" class="rounded-2xl w-full shadow-2xl" alt="Tanvir Bhai - Master Barber">
+                <div class="absolute -bottom-6 -left-6 bg-barber-gold text-barber-dark p-4 rounded-xl font-black text-xl text-center">
+                    15 YEARS <br> EXPERIENCE
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-6">MEET YOUR <span class="text-barber-gold">BARBER</span></h2>
+                <h3 class="text-2xl font-bold text-barber-gold mb-2">Tanvir Bhai</h3>
+                <p class="text-gray-400 mb-6">
+                    With over <strong>15 years of professional experience</strong>, Tanvir Bhai is a master of the craft. 
+                    He started his journey in the industry with a passion for hair artistry and has perfected skills in 
+                    <strong>Fades, Texturizing, Beard Design, and Classic Styling</strong>.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    He believes every client is unique. Whether you want a sharp corporate look, a trendy street style, 
+                    or a traditional gentleman's cut, Tanvir Bhai delivers perfection with every snip and shave.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <i class="fa fa-check-circle text-barber-gold text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Master of Fades & Blends</h4>
+                            <p class="text-sm text-gray-400">Skin fade, drop fade, taper fade expert.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fa fa-check-circle text-barber-gold text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Beard Design & Grooming</h4>
+                            <p class="text-sm text-gray-400">Precision lining and shaping.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fa fa-check-circle text-barber-gold text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Modern & Traditional Styles</h4>
+                            <p class="text-sm text-gray-400">From Pompadour to Buzz cuts.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-20 px-4 bg-barber-gray">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">VISIT <span class="text-barber-gold">US TODAY</span></h2>
+            <div class="bg-barber-dark p-8 rounded-2xl border border-gray-800 inline-block">
+                <i class="fa fa-map-marker text-barber-gold text-4xl mb-4"></i>
+                <h3 class="text-2xl font-bold mb-2">Subhan Hair Dresser</h3>
+                <p class="text-xl text-gray-300">Green Street, London E7 8BZ, United Kingdom</p>
+                <p class="text-gray-400 mt-2">Near Upton Park • Easy to Find • Friendly Service</p
